@@ -15,7 +15,7 @@ type Config struct {
 	ListenAddress string   `env:"HELLOADDON_LISTEN_ADDRESS" envDefault:":80"`
 	HealthFreqSec int      `env:"HELLOADDON_HEALTH_FREQ_SEC" envDefault:"60"`
 	EnvName       string   `env:"HELLOADDON_ENV_NAME" envDefault:"dev"`
-	Tokens        []string `env:"HELLOADDON_TOKENS"`
+	Tokens        []string `env:"HELLOADDON_TOKENS" envDefault:"aaaabbbb11112222"`
 	ServiceName   string   `env:"HELLOADDON_SERVICE_NAME" envDefault:"helloaddon"`
 
 	StatsDAddress string  `env:"HELLOADDON_STATSD_ADDRESS" envDefault:"localhost:8125"`
